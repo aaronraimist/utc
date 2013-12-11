@@ -1,20 +1,20 @@
-<html>
+<!DOCTYPE html>
+<!--https://github.com/breakingcrypto/utc-->
 <head>
 	<title>UTC</title>
 </head>
 <style type="text/css">
-		.time {
-			font-size: 77px;
-    		text-align: center;
-			font-family: 'GrandesignNeueSerif';
-	    	src: url('GrandesignNeueSerif.eot?') format('eot'), 
-	      		url('GrandesignNeueSerif.woff') format('woff'), 
-	      		url('GrandesignNeueSerif.ttf')  format('truetype'),
-	      		url('GrandesignNeueSerif.svg#GrandesignNeueSerif') format('svg');
-  		}
-  	</style>
+	.time {
+		font-size: 80px;
+		font-weight: 100;
+		font-family: serif;
+		text-align: center;
+		position: absolute;
+		top: 23%; left: 5%; right: 5%;
+  	}
+ </style>
 <body>
-  	<div id='time' class='time'></div>
+ 	<div id='time' class="time"></div>
   	<script type="text/javascript">
   		setInterval(function() {
     		var d = new Date();
