@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<!--https://github.com/breakingcrypto/utc-->
+<!-- https://github.com/breakingcrypto/utc -->
 <head>
 	<title>UTC</title>
 </head>
 <style type="text/css">
 	.time {
-		font-size: 80px;
-		font-weight: 100;
-		font-family: serif;
+		font-family: Georgia, serif;
+		font-size: 80px; color: black; font-weight: 100;
 		text-align: center;
+		margin: auto;
 		position: absolute;
-		top: 23%; left: 5%; right: 5%;
+		top: 30%; left: 0; bottom: 0; right: 0;
   	}
+	.button {
+		margin: auto;
+		margin-top: 0px;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background-color:#fe1a00;
+		display:inline-block;
+		color:#fffcff;
+		font-family:Georgia;
+		font-size:20px;
+		font-weight:bold;
+		font-style:normal;
+		text-decoration: none;
+		height:47px;
+		line-height:47px;
+		width:163px;
+		text-align:center;
+	}
+	.button:hover {
+		background-color:#ce0100;
+	}
  </style>
 <body>
  	<div id='time' class="time"></div>
@@ -21,6 +42,7 @@
 			var n = d.toUTCString();
     		document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
   		}, 500);
-  	</script>
+	</script>
+	<a class="button" id="button">Change it up!</a>
 </body>
 </html>
