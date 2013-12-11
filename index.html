@@ -1,26 +1,26 @@
 <html>
 <head>
-  <title>UTC Time</title>
+	<title>UTC</title>
 </head>
+<style type="text/css">
+		.time {
+			font-size: 77px;
+    		text-align: center;
+			font-family: 'GrandesignNeueSerif';
+	    	src: url('GrandesignNeueSerif.eot?') format('eot'), 
+	      		url('GrandesignNeueSerif.woff') format('woff'), 
+	      		url('GrandesignNeueSerif.ttf')  format('truetype'),
+	      		url('GrandesignNeueSerif.svg#GrandesignNeueSerif') format('svg');
+  		}
+  	</style>
 <body>
-  <style type="text/css">
-  .time {
-    font-size: 76px;
-    text-align: center;
-    font-family: 'GrandesignNeueSerif';
-	    src: url('GrandesignNeueSerif.eot?') format('eot'), 
-	      url('GrandesignNeueSerif.woff') format('woff'), 
-	      url('GrandesignNeueSerif.ttf')  format('truetype'),
-	      url('GrandesignNeueSerif.svg#GrandesignNeueSerif') format('svg');
-  }
-  </style>
-  <div id='time' class='time'></div>
-  <script type="text/javascript">
-  setInterval(function() {
-    var d = new Date();
-    var n = d.toUTCString();
-    document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
-  }, 500);
-  </script>
+  	<div id='time' class='time'></div>
+  	<script type="text/javascript">
+  		setInterval(function() {
+    		var d = new Date();
+			var n = d.toUTCString();
+    		document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
+  		}, 500);
+  	</script>
 </body>
 </html>
