@@ -1,10 +1,17 @@
 <html>
-<head></head>
+<head>
+  <title>UTC Time</title>
+</head>
 <body>
   <style type="text/css">
   .time {
-    font-size: 72px;
+    font-size: 76px;
     text-align: center;
+    font-family: 'GrandesignNeueSerif';
+	    src: url('GrandesignNeueSerif.eot?') format('eot'), 
+	      url('GrandesignNeueSerif.woff') format('woff'), 
+	      url('GrandesignNeueSerif.ttf')  format('truetype'),
+	      url('GrandesignNeueSerif.svg#GrandesignNeueSerif') format('svg');
   }
   </style>
   <div id='time' class='time'></div>
@@ -12,7 +19,7 @@
   setInterval(function() {
     var d = new Date();
     var n = d.toUTCString();
-    document.getElementById('time').innerHTML = n;
+    document.getElementById('time').innerHTML = n.replace('GMT', 'UTC');
   }, 500);
   </script>
 </body>
